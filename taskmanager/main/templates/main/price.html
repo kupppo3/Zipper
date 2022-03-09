@@ -1,0 +1,71 @@
+{% extends  'main/base.html'%}
+{% load static %}
+{% block title %}
+Цены
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="card-price">
+    <img class="card-photo" src="{% static 'main/img/4.jpg' %}" alt="Не грузит какого-то хуя">
+    <h2 class="why">Комплекс 1</h2>
+    <h2 class="why1">4000 рублей</h2>
+         <div class="price-text">
+              <ul class="price-list">
+                 <li> Химчистка сидений </li>
+                 <li> Полировка фар</li>
+      </ul>
+    </div>
+</div>
+<div class="card-price">
+    <img class="card-photo" src="{% static 'main/img/5.jpg' %}" alt="Не грузит какого-то хуя">
+    <h2 class="why">Комплекс 2</h2>
+    <h2 class="why1">8500 рублей</h2>
+         <div class="price-text">
+              <ul class="price-list">
+                 <li> Химчистка салона </li>
+                 <li> Полировка фар</li>
+                 <li> Полировка кузова (без крыши)</li>
+      </ul>
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+           <th>Услуга</th>
+           <th>Цена</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Полировка фар</td>
+            <td>2500</td>
+        </tr>
+        <tr>
+            <td>Полировка одного элемента</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>Обклейка плёнкой фар</td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <td>Химчистка сидений</td>
+            <td>3000</td>
+        </tr>
+        <tr>
+            <td>Перешивка руля</td>
+            <td>6000</td>
+        </tr>
+            <td>Замена линз в фарах</td>
+            <td>6000</td>
+        </tr>
+    </tbody>
+   
+</table>
+
+<h4 class="rights">Все права зарегистрированы "Павел Полировка" 2022 год.</h4>
+{% endblock %}

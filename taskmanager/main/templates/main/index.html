@@ -1,0 +1,23 @@
+{% extends  'main/base.html'%}
+{% load static %}
+
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+<div class="card">
+    <img class="card-photo" src="{% static 'main/img/2.jpg' %}" alt="Не грузит какого-то хуя">
+    <h2 class="why">Почему стоит выбрать нас?</h2>
+
+    <div class="card-text">
+      <ul class="card-list">
+            <li> Отличное качество </li>
+            <li> Низкие цены</li>
+            <li> Качественная работа</li>
+      </ul>
+
+    </div>
+</div>
+<h4 class="rights">Все права зарегистрированы "Павел Полировка" 2022 год.</h4>
+
+{% endblock %}
